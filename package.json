@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "prettier": "^2.7.1",
+    "scss": "^0.2.4"
+  }
+}

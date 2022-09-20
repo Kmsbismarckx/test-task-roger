@@ -1,0 +1,118 @@
+@import "variables";
+
+.aside__left {
+	margin-right: 40px;
+	width: 200px;
+	.aside__left_location {
+		height: 70px;
+		display: flex;
+		align-items: center;
+	}
+	.aside__left_header {
+		display: flex;
+		justify-content: space-between;
+		height: 40px;
+		margin-bottom: 40px;
+		align-items: center;
+	}
+	.aside__left_navigation {
+		display: flex;
+		flex-direction: column;
+		.aside__left_navigation_item {
+			margin-bottom: 20px;
+			font-weight: bold;
+			font-size: 16px;
+		}
+		.sale {
+			color: #b72020;
+		}
+	}
+	.aside__left_information {
+		font-size: 12px;
+		margin-top: 40px;
+		color: gray;
+	}
+}
+
+.aside__right {
+	width: 220px;
+	margin-left: 40px;
+	.aside__right_item {
+		display: flex;
+		.aside__right_phone_wrapper {
+			display: flex;
+			align-items: center;
+			position: relative;
+			overflow: hidden;
+			line-height: 3;
+			flex: 1;
+			flex-grow: 2;
+			margin-right: 10px;
+			.aside__right_phone {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				font-size: 12px;
+				font-weight: bolder;
+				border: none;
+				width: 100%;
+				outline:0;
+			}
+		}
+		.aside__right_phone_wrapper:after {
+			content: '\25BC';
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			transform: translateY(-50%);
+			pointer-events: none;
+		}
+		.aside__right_society {
+			ul {
+				display: flex;
+				justify-content: space-between;
+				height: 100%;
+				align-items: center;
+			}
+			.aside__right_society_link {
+				margin-right: 10px;
+			}
+		}
+	}
+	.aside__right_item:first-child{
+		height: 70px;
+	}
+	.aside__filter {
+		height: 40px;
+		margin-bottom: 75px;
+		display: flex;
+		justify-content: space-between;
+		.aside__filter_item {
+			position: relative;
+		}
+		.aside__filter_item::after {
+			content: '5';
+			position: absolute;
+			font-size: 12px;
+			top: -5px;
+			right: -5px;
+			width: 12px;
+			height: 12px;
+			line-height: 12px;
+			padding: 1px;
+			text-align: center;
+			background-color: white;
+			border-radius: 50%;
+		}
+	}
+	.aside__right_item:last-of-type {
+		display: flex;
+		justify-content: center;
+		.aside__right_item_img {
+			box-sizing: content-box;
+			padding: 5px;
+			background-color: white;
+			box-shadow: 0 0 5px 5px #eee;
+			border-radius: 5px;
+		}
+	}
+}
